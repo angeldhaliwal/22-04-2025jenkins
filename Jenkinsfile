@@ -6,6 +6,7 @@ pipeline {
             steps {
                 echo 'Building...'
                 sh 'whoami'
+                sh 'sudo apt update'
             }
         }
         stage('Test') {
