@@ -8,7 +8,7 @@ pipeline {
                 sh 'whoami'
                 sh 'apt update && apt upgrade -y'
                 sh ' apt install sudo -y'
-                sh 'sudo apt install docker.io && apt install docker-compose -y  '
+                sh 'sudo apt install docker.io -y && apt install docker-compose -y  '
             }
         }
         stage('Test') {
