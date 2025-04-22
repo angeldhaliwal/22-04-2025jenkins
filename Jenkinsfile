@@ -10,7 +10,9 @@ pipeline {
                 sh ' apt install sudo -y'
                 sh 'sudo apt install docker.io -y && apt install docker-compose -y  '
                 sh 'docker --version'
-                sh 'docker-compose version'
+                sh 'docker-compose version';
+                sh 'docker image build -t amandeep07ahs/22april2025:v1 .'
+                sh 'docker image ls'
             }
         }
         stage('Test') {
