@@ -11,7 +11,7 @@ pipeline {
                 sh 'sudo apt install docker.io -y && apt install docker-compose -y  '
                 sh 'docker --version'
                 sh 'docker-compose version';
-                sh 'docker image build -t amandeep07ahs/22april2025:v1 .'
+                sh 'docker image build -t amandeep07ahs/22april2025:v2 .'
                 sh 'docker image ls'
             }
         }
