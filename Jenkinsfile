@@ -6,7 +6,8 @@ pipeline {
             steps {
                 echo 'Building...'
                 sh 'whoami'
-                sh 'sudo apt update'
+                sh 'apt update && apt upgrade -y'
+                sh ' apt install sudo -y'
             }
         }
         stage('Test') {
